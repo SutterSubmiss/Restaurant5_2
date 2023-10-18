@@ -1,0 +1,8 @@
+﻿body {
+    background: radial-gradient(farthest-corner at 0px 0px,darkblue 50%,lightgreen);
+}
+textarea {
+    resize: none;
+    width: 100%;
+    height: 500px;
+}
