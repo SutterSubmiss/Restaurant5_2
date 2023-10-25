@@ -1,8 +1,55 @@
 ﻿@{
     ViewData["Title"] = "Menu";
 }
-
+@model Dishes
+@Model.Name;
 <div class="text-center">
     <h1 class="display-4">Menu</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+  <div class="row">
+   <div class="card row-lg-3 row-md-6 row-sm-12 col-lg-3 col-md-6 col-sm-12" style="width: 18rem;">
+  <img src="pierogi.jpg" class="card-img-top" alt="...">
+
+  <div class="card-body ">
+    <h5 class="card-title">Pierogi</h5>
+ 
+    <a href="#" class="btn btn-primary">Wyświetl stronę dania.</a>
+  </div>
+  </div>
+    <div class="card row-lg-3 row-md-6 row-sm-12 col-lg-3 col-md-6 col-sm-12" style="width: 18rem;">
+  <img src="pierogi.jpg" class="card-img-top" alt="...">
+  <div class="card-body ">
+    <h5 class="card-title">Kotlet schabowy</h5>
+
+    <a href="#" class="btn btn-primary">Wyświetl stronę dania.</a>
+  </div>
+  </div>
+
+    <div class="card row-lg-3 row-md-6 row-sm-12 col-lg-3 col-md-6 col-sm-12" style="width: 18rem;">
+  <img src="pierogi.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Makaron ze szpinakiem</h5>
+
+    <a href="#" class="btn btn-primary">Wyświetl stronę dania.</a>
+  </div>
+  </div>
+
+  <div class="card row-lg-3 row-md-6 row-sm-12 col-lg-3 col-md-6 col-sm-12" style="width: 18rem;">
+  <img src="pierogi.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Placki ziemniaczane</h5>
+
+    <a href="#" class="btn btn-primary">Wyświetl stronę dania.</a>
+  </div>
+  </div>
+
+</div>
+<div class="row-lg-12 row-md-11 row-sm-11 col-lg-12 col-md-12 col-sm-12">
+<ul class="pagination align-self-center">
+    <li class="page-item"><a class="page-link" >Previous</a></li>
+    <li class="page-item"><a class="page-link" sp-controller="Menu" asp-action="Index">1</a></li>
+    <li class="page-item"><a class="page-link" sp-controller="Menu" asp-action="Index2">2</a></li>
+    <li class="page-item"><a class="page-link" sp-controller="Menu" asp-action="Index3">3</a></li>
+    <li class="page-item"><a class="page-link" sp-controller="Menu" asp-action="Index2">Next</a></li>
+  </ul>
+</div>
 </div>

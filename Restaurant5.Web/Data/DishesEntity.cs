@@ -10,7 +10,8 @@
         public ICollection<DishesEntity> Dishes { get; set; }
         public DishesEntity()
         {
-
+        
 
         }
     }
+}

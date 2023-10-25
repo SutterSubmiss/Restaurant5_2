@@ -11,40 +11,40 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3" style="background:linear-gradient(lightgreen 50%,darkgreen);">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3" style="background:linear-gradient(lightgreen 50%,darkgreen);" >
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Restaurant5.Web</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between" >
+                    <ol class="navbar-nav flex-grow-1">
+                        <li class="nav-item " aria-current="page">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item " aria-current="page">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                          
-                    <li class="nav-item">
+                    <li class="nav-item " aria-current="page">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Menu" asp-action="Index">Menu</a>
                      </li>
-                    <li class="nav-item">
+                    <li class="nav-item " aria-current="page">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Rules" asp-action="Index">Rules</a>
                     </li>
-    <li class="nav-item">
+                 <li class="nav-item " aria-current="page">
                         <a class="nav-link text-dark" asp-area="" asp-controller="Opinion" asp-action="Index">Opinion</a>
                 </li>
 
-                    </ul>
+                    </ol>
 
                     <partial name="_LoginPartial" />
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container" style="background:linear-gradient(lightgreen 50%,darkgreen); border-radius:25px; font-size:20px">
+    <div class="container-xxl --bs-dark-border-subtle" style="background:linear-gradient(lightgreen 50%,darkgreen); border-radius:25px; font-size:20px ">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>

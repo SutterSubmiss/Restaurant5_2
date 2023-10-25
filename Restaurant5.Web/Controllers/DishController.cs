@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Restaurant5.Web.Models;
 
 namespace Restaurant5.Web.Controllers
 {
@@ -6,6 +7,7 @@ namespace Restaurant5.Web.Controllers
     {
         public IActionResult Index()
         {
+       
             return View();
         }
     }
